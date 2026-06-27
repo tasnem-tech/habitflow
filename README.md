@@ -1,102 +1,247 @@
-# ◈ HabitFlow
+<div align="center">
 
-> A minimal, dark-mode habit tracker with streaks, weekly charts, and completion stats — built with React + Vite.
+# 🌙 HabitFlow
 
----
+### Build Better Habits. Every Day.
 
-## ✨ Features
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&pause=1000&color=7B68EE&center=true&vCenter=true&width=700&lines=Track+Habits.;Build+Consistency.;Stay+Motivated.;Powered+by+React+%26+Vite."/>
 
-- **Habit Cards** — Track each habit with a 7-day dot grid you can click to log past days
-- **Streak Counter** — Live streaks that reset if you miss a day  
-- **Stats Sidebar** — Weekly bar chart (Recharts), 30-day completion rates, leaderboard
-- **Header Pill** — Today's done/total count always visible
-- **Add Habit Modal** — Custom name, emoji, and colour per habit
-- **Persistent Storage** — Everything lives in `localStorage`, no backend required
-- **Responsive** — Adapts to mobile with a stacked layout
+<br>
 
----
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite)
+![CSS](https://img.shields.io/badge/CSS_Modules-1572B6?style=for-the-badge&logo=css3)
+![LocalStorage](https://img.shields.io/badge/Storage-LocalStorage-yellow?style=for-the-badge)
 
-## 🛠 Tech Stack
+**A modern habit tracker designed to help you stay consistent, visualize progress, and build better routines.**
 
-| Tool | Purpose |
-|------|---------|
-| React 18 | UI & state |
-| Vite 5 | Dev server & bundler |
-| Recharts | Weekly bar chart |
-| date-fns | Date arithmetic |
-| lucide-react | Icons |
-| CSS Modules | Scoped component styles |
+</div>
 
 ---
 
-## 🚀 Getting Started
+# 🎯 Why HabitFlow?
 
-### Prerequisites
-- Node.js ≥ 18
+Most habit trackers are cluttered.
 
-### Install & run
+HabitFlow focuses on **simplicity**, **speed**, and **beautiful analytics** so you spend less time managing habits and more time completing them.
+
+---
+
+# ✨ Highlights
+
+| 🚀 Productivity | 📊 Analytics | 🎨 Experience |
+|---------------|-------------|--------------|
+| Daily Habit Tracking | Weekly Charts | Dark Mode UI |
+| Streak Counter | Completion Rate | Responsive Layout |
+| Local Storage | Progress Dashboard | Smooth Animations |
+| Emoji Support | Leaderboard | Modern Design |
+
+---
+
+# 📸 Preview
+
+<p align="center">
+
+🖥 Dashboard Screenshot
+
+*(Add screenshot here)*
+
+</p>
+
+---
+
+# ⚡ Core Features
+
+## ✅ Smart Habit Cards
+
+Track every habit with an interactive **7-day progress grid**.
+
+---
+
+## 🔥 Streak Engine
+
+Automatically calculates your current streak.
+
+Never lose momentum.
+
+---
+
+## 📈 Statistics Dashboard
+
+Visualize your progress with:
+
+- Weekly Bar Charts
+- Completion Percentage
+- Habit Leaderboard
+
+---
+
+## 🎨 Personalization
+
+Customize every habit using
+
+- 😊 Emoji
+- 🎨 Color
+- 📝 Custom Name
+
+---
+
+## 💾 Offline First
+
+No account.
+
+No backend.
+
+Everything is stored securely in your browser using **localStorage**.
+
+---
+
+# 🖥 Built With
+
+| Technology | Purpose |
+|------------|----------|
+| ⚛ React 18 | UI Development |
+| ⚡ Vite | Build Tool |
+| 📈 Recharts | Charts |
+| 📅 date-fns | Date Utilities |
+| 🎨 CSS Modules | Styling |
+| 💾 LocalStorage | Persistent Storage |
+
+---
+
+# 🗂 Project Structure
+
+```text
+📦 HabitFlow
+
+┣ 📂 src
+┃ ┣ 📂 components
+┃ ┃ ┣ 📄 Header.jsx
+┃ ┃ ┣ 📄 HabitCard.jsx
+┃ ┃ ┣ 📄 StatsPanel.jsx
+┃ ┃ ┗ 📄 AddHabitModal.jsx
+┃
+┃ ┣ 📂 hooks
+┃ ┃ ┗ 📄 useHabits.js
+┃
+┃ ┣ 📂 styles
+┃ ┃ ┗ 📄 globals.css
+┃
+┃ ┣ 📄 App.jsx
+┃ ┗ 📄 main.jsx
+┃
+┣ 📄 index.html
+┣ 📄 vite.config.js
+┗ 📄 package.json
+```
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/habitflow.git
-cd habitflow
+```
+
+Install packages
+
+```bash
 npm install
+```
+
+Run locally
+
+```bash
 npm run dev
 ```
 
-Open **http://localhost:5173** in your browser.
+Open
 
-### Build for production
-
-```bash
-npm run build
-# Static output in /dist — deploy to Vercel, Netlify, or GitHub Pages
+```
+http://localhost:5173
 ```
 
 ---
 
-## 📁 Project Structure
+# 📊 Dashboard
 
-```
-habitflow/
-├── src/
-│   ├── components/
-│   │   ├── Header.jsx            # Logo, date, today's progress pill
-│   │   ├── HabitCard.jsx         # Per-habit card with dots + streak
-│   │   ├── StatsPanel.jsx        # Sidebar: chart, rates, leaderboard
-│   │   └── AddHabitModal.jsx     # Create habit modal (emoji + colour)
-│   ├── hooks/
-│   │   └── useHabits.js          # All state, localStorage, derived data
-│   ├── styles/
-│   │   └── globals.css           # CSS variables, resets, animations
-│   ├── App.jsx                   # Root layout
-│   └── main.jsx                  # Entry point
-├── index.html
-├── vite.config.js
-└── package.json
-```
+✔ Today's Progress
+
+✔ Weekly Completion
+
+✔ Longest Streak
+
+✔ Total Habits
+
+✔ Leaderboard
+
+✔ Monthly Statistics
 
 ---
 
-## 🗺 Roadmap
+# 🌟 Upcoming Features
 
-- [ ] Monthly heatmap view (GitHub-style)
-- [ ] Habit categories / tags
-- [ ] Export to CSV
-- [ ] PWA + push reminders
-- [ ] Cloud sync (Supabase)
-- [ ] Drag to reorder habits
-
----
-
-## 🤝 Contributing
-
-1. Fork the repo
-2. `git checkout -b feature/my-feature`
-3. Commit & push
-4. Open a Pull Request
+- 🌡 GitHub-style Contribution Heatmap
+- 📱 PWA Support
+- ☁ Cloud Sync
+- 🔔 Smart Notifications
+- 📤 Export to CSV
+- 🤝 Shared Habits
+- 🎯 Habit Categories
+- 📆 Calendar View
 
 ---
 
-## 📄 License
+# 🎥 Demo
 
-MIT
+<p align="center">
+
+🖥 Live Demo
+
+https://habitflow-demo.vercel.app
+
+</p>
+
+---
+
+# 💡 Why This Project?
+
+HabitFlow demonstrates:
+
+✅ React Architecture
+
+✅ Component Design
+
+✅ State Management
+
+✅ Data Visualization
+
+✅ Local Storage
+
+✅ Responsive Design
+
+✅ User Experience
+
+---
+
+# 👨‍💻 Developer
+
+## Tasnem Islam Prome
+
+**Frontend Developer • React Developer • UI Engineer**
+
+GitHub
+
+https://github.com/tasnem-tech
+
+---
+
+<div align="center">
+
+## ⭐ If you enjoyed this project, please give it a Star!
+
+Made with ❤️ using React + Vite
+
+</div>
